@@ -1,0 +1,134 @@
+/* border image property*/
+div.border-radius{
+  border-radius: 25px;
+  background: dodgerblue;
+  width: 200px;
+  height: 100px;
+}
+
+p#border-img{
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(https://static.remove.bg/remove-bg-web/3661dd45c31a4ff23941855a7e4cedbbf6973643/assets/start-0e837dcc57769db2306d8d659f53555feb500b3c5d456879b9c843d1872e7baa.jpg) 30 round;
+}
+
+/* gradient*/
+div.gradient-tb{
+  height: 200px;
+  background-color: red;
+  background-image: linear-gradient(dodgerblue,orange);
+  background-image: linear-gradient(to right, dodgerblue, cyan);
+
+
+}
+
+/*Shadow*/
+h1#shadow{
+  text-shadow: 2px 2px 5px dodgerblue;
+}
+
+/*Transition*/
+div.transition{
+  width: 100px;
+  height: 100px;
+  background: dodgerblue;
+  transition: width 2s;
+}
+
+div.transition:hover{
+  width: 300px;
+}
+
+/*Animation*/
+div.animation{
+  width: 100px;
+  height: 100px;
+  background: red;
+  animation-name: ex1;
+  animation-duration: 4s;
+
+}
+
+@keyframes ex1 {
+  from {background:green;}
+  to {background: dodgerblue;}
+}
+
+/*Tooltip*/
+.tooltip{
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+
+}
+
+.tooltip .tooltiptext{
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext{
+  visibility: visible;
+}
+
+/*Button*/
+
+.button{
+  background: lime;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px
+  margin:4px 2px;
+  cursor: pointer;
+}
+
+.button:hover{
+  background: green;
+}
+
+/*Pagination*/
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+
+}
+
+.pagination a:hover{
+  color: red;
+
+}
+
+/*Media Queries*/
+body{
+  background: pink;
+}
+
+@media screen and (min-width: 400px) {
+ body {
+   background: green;
+ }
+}
+
+@media screen and (min-width: 768px){
+body{
+  background: white;
+}
+
+}
